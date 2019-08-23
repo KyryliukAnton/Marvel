@@ -1,0 +1,109 @@
+$color-sryle: #cc0001;
+*{
+	word-wrap:normal;
+}
+.logo{
+width: 100%;
+
+	img {
+	margin: 0 auto;
+	display: block;
+	}
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url(../img/bg.png) no-repeat;
+	background-size: cover;
+}
+
+header,footer{
+	background-color: $color-sryle;
+	box-size: border-box; 
+}
+
+footer{
+	height: 50px;
+}
+
+.foot{
+	text-align: center;
+	font-size: 1.5em;
+	padding-top: 0.5em;
+}
+
+.title{
+	text-transform: uppercase;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: 0;
+	font-size: 2em;
+}
+
+section{
+	width: 50%;
+	max-width: 800px;
+	min-width: 350px;
+	margin: 0 auto;
+	display: block;
+	background-color: white;
+	padding: 10px 20px; 
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.heros{
+	padding-bottom: 25px;
+}
+.hero{
+	display: flex;
+	//flex-wrap: wrap;
+	//justify-content: center;
+    margin: 25px 0;
+	.img-hero {
+		padding-top: 2em;
+	}
+	
+	.info-hero{
+		padding-left: 2em;
+	}
+
+	.name-hero{
+		text-transform: uppercase;
+		color: $color-sryle;
+		margin-bottom: 0;
+	}
+
+	.name-man{
+		margin-top: 0;
+		font-weight: bold;
+	}
+
+	.abilities{
+	//	min-width: 280px;
+	}
+}
+
+
+@media screen and (max-width: 800px) {
+	.hero{
+		//flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+	.img-hero img {
+	margin: 0 auto;
+	display: block;
+	}
+	.name-hero, .name-man{
+		text-align: center;
+	}
+	.info-hero{
+		padding: 0 2em;
+	}
+	}
+}
