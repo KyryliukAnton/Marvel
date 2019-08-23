@@ -36,7 +36,7 @@ footer {
 section {
   width: 50%;
   max-width: 800px;
-  min-width: 350px;
+  min-width: 400px;
   margin: 0 auto;
   display: block;
   background-color: white;
@@ -84,4 +84,15 @@ ul {
     .hero .name-hero, .hero .name-man {
       text-align: center; }
     .hero .info-hero {
-      padding: 0 2em; } }
+      padding: 0 2em; }
+  .logo img {
+    width: 50%; }
+  section {
+    width: 60%; } }
+
+@media screen and (max-width: 640px) {
+  section {
+    width: 80%;
+    min-width: 200px; }
+  .title {
+    font-size: 1.5em; } }
